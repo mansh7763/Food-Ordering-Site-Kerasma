@@ -1,0 +1,359 @@
+/* CSS Reset */
+#navbar ul li a {
+  color: #f58607;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-clip: url("../images/index_background.mp4");
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 500;
+  justify-content: flex-end;
+  height: 65px;
+}
+
+#navbar::before {
+  /* content: ""; */
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 47;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", cursive;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("../images/home.jpg") no-repeat center center/cover; */
+}
+
+#home::before {
+  /* content: ""; */
+  position: absolute;
+  /* background: url("../images/home.jpg") no-repeat center center/cover; */
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 1;
+  background-position: fixed;
+}
+
+.back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  opacity: 0.8;
+  /* z-index: 3;s */
+}
+@media (min-aspect-ratio: 16/9) {
+  .back {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back {
+    width: auto;
+    height: 100%;
+  }
+}
+#home h1 {
+  color: #f58607;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Kablammo", cursive;
+  font-size: 4.5rem;
+  z-index: 50;
+  background-image: linear-gradient(45deg, #ff0000, #00ff00);
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari/Chrome support */
+  color: transparent;
+  transform: translateY(60px);
+}
+
+#home p {
+  color: #f58607;
+  text-align: center;
+  font-size: 2.8rem;
+  font-family: "Diphylleia", serif;
+  font-weight: 400px;
+  z-index: 50;
+  transform: translateY(-40px);
+  background-image: linear-gradient(70deg, #ff0000, #bfff00, #f54307);
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari/Chrome support */
+  color: transparent;
+}
+
+/*second main page */
+
+.home_second_part {
+  position: absolute;
+  top: 568px;
+
+  background-image: url("../images/background_home2.jpg");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: flex-start; */
+}
+.home_second_part a {
+  text-decoration: none;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -250px;
+  justify-content: space-between;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  width: 100%;
+  height: 600px;
+}
+
+.text {
+  /* border: 1px solid #ccc; */
+  margin-right: 80px;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  /* margin-top: 40px; */
+  margin-left: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-left: 60px;
+  padding-right: 60px;
+  initial-letter: 1.8px;
+  font-family: "Diphylleia", serif;
+  font-weight: 500px;
+}
+
+.imgs {
+  width: 100%;
+  height: 100%;
+}
+.img {
+  width: 50%;
+  height: 50%;
+  /* border: 1px solid #ccc; */
+  text-align: center;
+}
+
+.tag {
+  color: #f58607;
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Kablammo", cursive;
+  font-size: 4.5rem;
+  z-index: 50;
+  background-image: linear-gradient(45deg, #ff0000, #00ff00);
+  background-clip: text;
+  -webkit-background-clip: text; /* Safari/Chrome support */
+  color: transparent;
+  margin-bottom: 140px;
+  margin-top: 50px;
+}
+.category {
+  padding: 5px;
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: rgba(200, 195, 191, 0.599);
+  color: burlywood;
+  border-radius: 7px;
+}
+
+/* footer */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+  z-index: 700;
+  margin-top: 1900px;
+}
+
+.footer > * {
+  flex: 1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+  align-items: center;
+  justify-content: center;
+}
+
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+
+  .footer__addr {
+    flex: 1 0px;
+  }
+
+  .footer__nav {
+    flex: 2 0px;
+  }
+}

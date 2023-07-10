@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <video autoplay loop muted plays-inline class="back">
+      <source src="../images/login_background.mp4" type="video/mp4" />
+    </video>
+    <div class="login-signup l-attop" id="login">
+      <div class="login-signup-title">LOG IN</div>
+      <div class="login-signup-content">
+        <div class="input-name">
+          <h2>Email-Id</h2>
+        </div>
+        <input type="text" name="email" value="" class="field-input" />
+        <div class="input-name input-margin">
+          <h2>Password</h2>
+        </div>
+        <input type="text" name="psd" value="" class="field-input" />
+        <div class="input-r">
+          <div class="check-input">
+            <input
+              type="checkbox"
+              id="remember-me-2"
+              name="rememberme"
+              value=""
+              class="checkme"
+            />
+            <label class="remmeberme-blue" for="remember-me-2"></label>
+          </div>
+          <div class="rememberme">
+            <label for="remember-me-2">Remember Me</label>
+          </div>
+        </div>
+        <button class="submit-btn" name="signin" onclick="openpage()">
+          Enter
+        </button>
+
+        <div class="forgot-pass">
+          <a href="#">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="login-signup s-atbottom" id="signup">
+      <div class="login-signup-title">SIGN UP</div>
+      <div class="login-signup-content">
+        <div class="input-name">
+          <h2>Username</h2>
+        </div>
+        <input type="text" name="username" value="" class="field-input" />
+        <div class="input-name input-margin">
+          <h2>E-Mail</h2>
+        </div>
+        <input type="text" name="email" value="" class="field-input" />
+        <div class="input-name input-margin">
+          <h2>Phone Number</h2>
+        </div>
+        <input type="text" name="phone" value="" class="field-input" />
+        <div class="input-name input-margin">
+          <h2>Password</h2>
+        </div>
+        <input type="text" name="psd" value="" class="field-input" />
+        <div class="input-name input-margin">
+          <h2>Confirm Password</h2>
+        </div>
+        <input type="text" name="cpsd" value="" class="field-input" />
+
+        <button class="submit-btn" name="signup">Enter</button>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../javascript/login.js"></script>
+    <script>
+      function openpage() {
+        window.location.href = "index.html";
+      }
+    </script>
+  </body>
+</html>
